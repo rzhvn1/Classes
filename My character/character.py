@@ -15,6 +15,8 @@ class Person:
         self.expirience = 0
 
 
+
+
     def lvlup(self, exp):
         exp_list = [20, 30, 40, 100, 500, 1000]
         i = 0
@@ -30,6 +32,8 @@ class Person:
                 self.strenght += 13
                 self.intellegence += 13
                 self.expirience = exp
+
+
 
 
     def equip(self, item):
@@ -72,8 +76,10 @@ class Person:
             self.damage += 2
 
 
-person1 = Person(name='abrakadabra', race='human')
+person1 = Person(name='Garosh', race='Ork')
 person1.lvlup(2000)
+person1.check_exp()
+print(person1.expirience)
 print(person1.name, person1.race, person1.speed, person1.level, person1.agility,person1.strenght,person1.stamina,person1.damage,
       person1.health,person1.intellegence,person1.armor
       )
